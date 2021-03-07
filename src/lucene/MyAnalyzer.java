@@ -6,7 +6,7 @@ import org.apache.lucene.analysis.CharArraySet;
 import org.apache.lucene.analysis.StopwordAnalyzerBase;
 
 public class MyAnalyzer extends StopwordAnalyzerBase{
-	public final static String DEFAULT_STOPWORD_FILE = "stopwords.txt";
+	public final static String DEFAULT_STOPWORD_FILE = "/lucene/stopwords.txt";
 	protected final CharArraySet stemExclusionSet;
 
 	public static CharArraySet getDefaultStopSet(){
