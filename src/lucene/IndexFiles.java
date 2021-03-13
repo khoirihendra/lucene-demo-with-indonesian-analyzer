@@ -38,12 +38,6 @@ public class IndexFiles {
 		Analyzer addStemmer = new MyIndonesianStemFilter();
 		Analyzer addStemmerWithStemDerivationalFalse = new MyIndonesianStemFilter(false);
 		
-//		CharArraySet a = new CharArraySet(100, true);
-//		char[] texts = {'a','s','a','l'};
-//		a.add(texts);
-//		System.out.println(a);
-//		Analyzer addStemmerWithKeywordExclusion = new MyIndonesianStemFilterWithKeywordExclusion(a);
-		
 		System.out.println("1. TOKENIZER (ADD STANDARD TOKENIZER) ");
 		debugStream(standardTokenizer, text);
 		
@@ -59,9 +53,6 @@ public class IndexFiles {
 		debugStream(addStemmer, text);
 		System.out.println("(stemmer default with stem derivational = false)");
 		debugStream(addStemmerWithStemDerivationalFalse, text);
-		//System.out.println("(stemmer default with keyword exclusion)");
-		//debugStream(addStemmerWithKeywordExclusion, text);
-		
 	}
 	
 	private static void debugStream(Analyzer analyzer, String text) throws IOException {
